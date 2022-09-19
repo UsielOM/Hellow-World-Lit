@@ -10,7 +10,9 @@ export class HellowWorld extends LitElement {
 
     static get styles() {
         return css `
-   *{ color: blue;}
+   .mycolor{
+    color: blue;
+   }
     `;
     }
     constructor() {
@@ -20,7 +22,7 @@ export class HellowWorld extends LitElement {
 
     render() {
         return html `
-        <p>Hellow, ${this.name}!</p>
+        <p class="mycolor">Hellow, ${this.name}!</p>
         `;
     }
 }
