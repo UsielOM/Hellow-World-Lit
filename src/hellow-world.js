@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 
 export class HellowWorld extends LitElement {
 
@@ -8,11 +8,11 @@ export class HellowWorld extends LitElement {
         };
     }
 
-    static styles = css `
-    :host {
-        color: blue;
-    }
+    static get styles() {
+        return css `
+   *{ color: blue;}
     `;
+    }
     constructor() {
         super();
         this.name = 'World';
